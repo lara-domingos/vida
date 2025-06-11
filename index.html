@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lara & Eduardo 💖</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe4ec, #ffd6f5);
+      color: #880e4f;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      margin: 20px 0;
+    }
+
+    .buttons button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff69b4;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .buttons button:hover {
+      background-color: #ff1493;
+    }
+
+    .section {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .active {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 15px;
+      margin: 10px;
+    }
+
+    iframe {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1> Xinhuu! ❤</h1>
+    <p> Feliz dia dos namorados, meu amor </p>
+    <strong> 12/06/2025 </strong>
+    <p>“Eu te amei desde o primeiro momento em que te vi. Eu acho que nunca vou parar de te amar.”</p>
+
+    <div class="buttons">
+      <button onclick="showSection('fotos')">📸 momentos especiais para nós </button>
+      <button onclick="showSection('playlist')">🎵 lembranças boas </button>
+      <button onclick="showSection('datas')">📅 datas Especiais</button>
+      <button onclick="showSection('xinhu')">❤ minha vida</button>
+    </div>
+
+    <div id="fotos" class="section">
+      <h2>momentos especiais para nós</h2>
+      <p>Espero que você nunca se esqueça desses dias, são muito especiais para mim e acredito que para você também! </p>
+      <img src="Ladu6.jpg" alt="Foto juntos">
+      <img src="Ladu3.jpg" alt="Outro momento especial">
+    </div>
+
+    <div id="playlist" class="section">
+      <h2>lembranças boas</h2>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/31rOGp6sMsBFHIwAT6iQmV?utm_source=generador" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div id="datas" class="section">
+      <h2>Datas Especiais</h2>
+      <ul>
+        <li>💘 09/02/2022 - Essa data representa o dia em que conheci o melhor presente que alguém poderia ter 
+        </li>
+        <li>💍 14/02/2022 – Quando minha vida se transformou em uma bolha de felicidade e estresse (você me irrita muito, mas eu te amo muito mesmo assim)</li>
+      </ul>
+    </div>
+
+    <div id="xinhu" class="section">
+      <h2> Você é tudo que eu sempre sonhei! 💖</h2>
+      <p>Amor, você sempre será meu confidente, meu parceiro e a pessoa que eu mais amo nessa vida, estar ao seu lado é e sempre será minha melhor escolha! 🥰</p>
+      <p>Espero que seja feliz ao meu lado, tanto quanto sou com você. Meu maior objetivo é te fazer sorrir até meu último suspiro. 💕</p>
+      <p>Tenho muito orgulho de quem você está se tornando, jamais esqueça sua essencia. Sempre seja esse Men incrivel que você é</p>
+      <p>EU TE AMO!! </p>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
